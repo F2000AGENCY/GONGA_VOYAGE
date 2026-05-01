@@ -1,10 +1,10 @@
 const images = [
-    'travel_pics/africa.png',
-    'travel_pics/orient.png',
-    'travel_pics/london.png',
-    'travel_pics/usa.png',
-    'travel_pics/asie.png',
-    'travel_pics/airplane.png'
+    'travel_pics/africa.PNG',
+    'travel_pics/orient.PNG',
+    'travel_pics/london.PNG',
+    'travel_pics/usa.PNG',
+    'travel_pics/asie.PNG',
+    'travel_pics/airplane.PNG'
 ];
 
 let index = 0;
