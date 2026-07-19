@@ -511,6 +511,6 @@ section {
     }
 
     .about-image img {
-        height: clamp(30%, auto, 70%);
+        height: clamp(70%, auto, 100%);
         width: 100%;
 }
