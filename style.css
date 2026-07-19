@@ -178,8 +178,7 @@ h2 {
 }
 
 section {
-    padding: 100px 10%;
-
+    padding: 70px 10%;
 }
 
 .feature-item {
@@ -203,6 +202,7 @@ section {
 
 .feature-image {
     flex: 1;
+    flex-wrap:wrap;
 }
 
 .feature-item:nth-child(2) img {
@@ -416,10 +416,6 @@ section {
         text-align: center;
     }
 
-    nav {
-        margin-top: 20px;
-    }
-
     .products-grid {
         flex-direction: column;
         align-items: center;
@@ -435,6 +431,7 @@ section {
     }
 
     nav {
+        margin-top: 20px;
         display: none;
         flex-direction: column;
         width: 100%;
@@ -443,6 +440,11 @@ section {
         top: 70px;
         left: 0;
         padding: 20px 0;
+    }
+
+    nav a {
+        font-size: 24px;
+        line-height: 3;
     }
 
     nav.active {
@@ -461,6 +463,16 @@ section {
         height: 3px;
         background-color: #00aeef;
         transition: 0.3s;
+    }
+
+    #mobile-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    #mobile-menu.active span:nth-child(2){
+        opacity: 0;
+    }
+    #mobile-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
     }
 
     .info-item {
