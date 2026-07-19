@@ -480,15 +480,23 @@ section {
         gap: 20px;
     }
 
+    .feature-tem {
+        flex-direction: column !important;
+        gap: 10px;
+        margin: 15px;
+    }
+
     .feature-image {
-        flex: 1;
+        dispaly: flex;
         width: 100%;
+        justify-content: center;
     }
 
     .feature-image img {
         width: 100%;
         height: auto;
-        max-height: none;
+        max-width: 400px;
+        object-fit: contain;
     }
 }
 
@@ -501,4 +509,8 @@ section {
     .agency-btn {
         text-align: center;
     }
+
+    .about-image img {
+        height: clamp(30%, auto, 70%);
+        width: 100%;
 }
