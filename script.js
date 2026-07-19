@@ -64,6 +64,12 @@ mobileMenu.addEventListener('click', () => {
     mobileMenu.classList.toggle('is-active');
 })
 
+const menuLinks = document.querySelectorAll('header nav a');
+    menuLinks.forEach(e => {
+        navMenu.classList.remove('active');
+        mobileMenu.classList.remove('is-active');
+    });
+
 document.getElementById('contact-form').addEventListener('submit', function (e) {
     e.preventDefault();
     const nom = document.querySelector('input[placeholder="Votre Nom"]').value;
@@ -72,6 +78,8 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     const projet = document.querySelector('textarea').value;
 
     const message = `Bonjour Gonga Voyages! %0A%0A` + `Nom : ${nom}%0A` + `Contact : ${contact}%0A` + `E-mail : ${email}%0A` `${projet}`;
+
+    
 
     const telephone = "237697139458";
 
