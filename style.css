@@ -480,7 +480,7 @@ section {
         gap: 20px;
     }
 
-    .feature-tem {
+    .feature-item {
         flex-direction: column !important;
         gap: 10px;
         margin: 15px;
