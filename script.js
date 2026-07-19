@@ -64,10 +64,12 @@ mobileMenu.addEventListener('click', () => {
     mobileMenu.classList.toggle('is-active');
 })
 
-const menuLinks = document.querySelectorAll('header nav a');
-    menuLinks.forEach(e => {
-        navMenu.classList.remove('active');
-        mobileMenu.classList.remove('is-active');
+const menuLinks = document.querySelectorAll('nav a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            mobileMenu.classList.remove('is-active');
+        )};
     });
 
 document.getElementById('contact-form').addEventListener('submit', function (e) {
@@ -77,7 +79,7 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     const email = document.querySelector('input[placeholder="Votre Email"]').value;
     const projet = document.querySelector('textarea').value;
 
-    const message = `Bonjour Gonga Voyages! %0A%0A` + `Nom : ${nom}%0A` + `Contact : ${contact}%0A` + `E-mail : ${email}%0A` `${projet}`;
+    const message = `Bonjour Gonga Voyages! %0A%0A` + `Nom : ${nom}%0A` + `Contact : ${contact}%0A` + `E-mail : ${email}%0A`+ `${projet}`;
 
     
 
