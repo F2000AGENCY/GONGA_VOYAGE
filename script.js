@@ -69,7 +69,7 @@ const menuLinks = document.querySelectorAll('nav a');
         link.addEventListener('click', () => {
             navMenu.classList.remove('active');
             mobileMenu.classList.remove('is-active');
-        )};
+        });
     });
 
 document.getElementById('contact-form').addEventListener('submit', function (e) {
