@@ -435,7 +435,7 @@ section {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: #1a1a1a;
+        background-color: rgba(26, 26, 26, 0.7;
         position: absolute;
         top: 70px;
         left: 0;
