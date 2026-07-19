@@ -435,7 +435,7 @@ section {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: rgba(26, 26, 26, 0.7);
+        background-color: rgba(26, 26, 26, 0.9);
         position: absolute;
         top: 70px;
         left: 0;
@@ -478,6 +478,17 @@ section {
     .info-item {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .feature-image {
+        flex: 1;
+        width: 100%;
+    }
+
+    .feature-image img {
+        width: 100%;
+        height: auto;
+        max-height: none;
     }
 }
 
